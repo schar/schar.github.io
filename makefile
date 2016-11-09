@@ -1,2 +1,2 @@
-all:	
-	yst; mv site docs
+all:
+	rm -r docs/; yst; mv site/ docs/
