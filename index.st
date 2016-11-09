@@ -9,8 +9,8 @@ developments in other disciplines (e.g., category theory and computer science)
 can inform linguistic theory, and I've always had a soft spot for direct
 interpretation and where syntax stops and semantics begins.
 
-My website's getting built right now. Not everything is populated just yet,
-and not everything that's up is necessarily where or as it should be. But feel
+My website's being built right now. Not everything is populated just yet, and
+not everything that's up is necessarily where or as it should be. But feel
 free to poke around in the meantime.
 
 [1]: http://ling.rutgers.edu
