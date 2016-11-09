@@ -1,0 +1,12 @@
+For Oct 12 & 14:
+
+In preparation for learning about variable binding in natural
+language, we'll first learn about the syntax and semantics of
+the predicate calculus. Then we'll use what we've gleaned to 
+build a semantics for the lambda calculus. 
+
+1. Allwood et al., Chapter 5
+
+2. If you're thirsty for more on predicate logic, have a look 
+   at Gamut, Volume 1, Chapter 3 (also in the course readings
+   folder.)

@@ -1,0 +1,14 @@
+For November 30 & Dec 2, please read:
+
+1. Lewis - Adverbs of quantification
+   [http://simoncharlow.com/courses/f15/sem1/pdfs/ZZZZ/lewis-adverbs-of-quantification-pp.pdf]
+
+2. Heim - File change semantics and the familiarity theory of definiteness
+   [http://simoncharlow.com/courses/f15/sem1/pdfs/ZZZZ/heim-fcs-pp.pdf]
+   
+You'll need to login. In case you've forgotten, the username is 'rutgers', 
+and the password is 'semantics'. 
+
+3. For more background (and a wealth of nice data), you can have a look at
+   Karttunen - Discourse referents, but this is optional reading. 
+   [http://simoncharlow.com/courses/f15/sem1/pdfs/ZZZZ/karttunen-discourse-referents.pdf]

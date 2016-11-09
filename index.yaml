@@ -1,0 +1,35 @@
+- url      : index.html
+  title    : Home
+  template : index.st
+
+- url       : papers.html
+  title     : Papers
+  template  : papers.st
+  requires  : [paper.st, papergroup.st, date.st]
+  data      :
+    papersbydate : FROM papers.yaml ORDER BY date DESC GROUP BY date
+
+- url       : talks.html
+  title     : Talks
+  template  : talks.st
+
+- url       : teaching.html
+  title     : Teaching
+  template  : teaching.st
+
+- url       : advising.html
+  title     : Advising
+  template  : advising.st
+
+- url       : vita.html
+  title     : Vita
+  template  : vita.st
+
+- url       : blog.html
+  title     : Blog
+  template  : blog.st
+
+- url      : news.html
+  title    : News
+  template : news.st
+

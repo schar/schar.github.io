@@ -1,0 +1,484 @@
+\documentclass{article}
+\usepackage{%
+  stmaryrd,
+  mathtools,
+  amsmath,
+  amssymb,
+  booktabs,
+  parskip,
+  qtree,
+  enumitem
+}
+\usepackage[silent]{mathspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[%
+  Numbers=OldStyle,
+  Kerning=Uppercase,
+  Scale=MatchLowercase
+]{Aldus nova Pro}
+\setsansfont[%
+  BoldFont={Univers Next Pro Medium},
+  Scale=.9
+]{Univers Next Pro Regular}
+\setmonofont[%
+  Scale=MatchLowercase
+]{Andale Mono} 
+\setmathfont(Digits,Latin,Greek)[%
+  Scale=MatchLowercase
+]{Neo Euler}
+%\scriptspace=0pt 
+\usepackage{MnSymbol}
+\usepackage[normalem]{ulem}
+\usepackage[colorlinks]{hyperref}
+\newcommand{\con}[1]{\textsf{\textsc{#1}}}
+\newcommand{\sv}[1]{\ensuremath{\lsem #1 \rsem}}
+\newcommand{\set}[1]{\ensuremath{\{ #1 \}}}
+\newcommand{\ceq}{\coloneqq}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\bsf}[1]{\textbf{\textsf{#1}}}
+\newcommand{\ab}[1]{\ensuremath{\langle #1 \rangle}}
+\newcommand{\AB}[1]{\ensuremath{(#1)}}
+\newcommand{\wff}{\textsc{\textsf{wff}}}
+\usepackage[margin=1.4in]{geometry}
+\setlength{\parindent}{0pt}
+\author{%
+  Simon Charlow
+  (\href{mailto:simon.charlow@rutgers.edu}%
+  {{simon.charlow@rutgers.edu}})
+}
+\title{\textbf{Type theory}}
+\date{September 30, 2015}
+\synctex=1
+\begin{document}\maketitle
+
+\section{Lambda calculus, redux}
+
+Why we bother:
+\begin{itemize}
+  \item
+    $\lambda$s let us build functions \textbf{anonymously}.
+
+  \item
+    Simplification of $\lambda$-terms is a straightforward way to compute values
+    for complex expressions.
+\end{itemize}
+
+\subsection{Syntax}
+
+Syntax: the set of $\lambda$-terms, $\Lambda$, is the smallest set meeting the
+following conditions:%
+\footnote{%
+  As we saw in the last class, in BNF this amounts to $E \Coloneqq V \mid
+  (\lambda V.\,E) \mid (E_1 \, E_2)$.
+}
+\begin{enumerate}
+  \item
+    (\textbf{Variables})
+    If $x$ is a variable, $x \in \Lambda$.
+
+  \item
+    (\textbf{Abstraction})
+    If $x$ is a variable and $M \in \Lambda$, then $(\lambda x.\,M) \in
+    \Lambda$.
+
+  \item
+    (\textbf{Application})
+    If $M,N \in \Lambda$, then $(M\,N) \in \Lambda$.
+\end{enumerate}
+
+\textbf{And that is literally it.} But some abbreviatory conventions improve
+usability: 
+\begin{enumerate}
+  \item
+    Application is left-associative. For example:
+    \begin{itemize}
+      \item
+        `$M\, N\, L$' instead of `$((M\, N)\, L)$'
+    \end{itemize}
+    
+  \item
+    Parentheses can be omitted whenever doing so doesn't create ambiguity. For
+    example:
+    \begin{itemize}
+      \item
+         `$\lambda x.\,M\,N$' instead of `$\lambda x.\,(M\,N)$'
+         
+      \item
+        `$\lambda x.\,M$' instead of `$(\lambda x.\,M)$'
+
+      \item
+        `$\lambda x.\,\lambda y.\,M$' instead of `$(\lambda x.\,(\lambda
+        y.\,M))$'
+    \end{itemize}
+    NB\@: $\lambda x.\, M\, y$ is equivalent to $\lambda x.\, (M\, y)$ and
+    $(\lambda x.\,(M\, y))$, but \emph{not} $(\lambda x.\,M)\, y$. I.e., the
+    scope of a $\lambda$ always extends as far to the right as possible
+    (i.e.~while still yielding a well-formed term).
+
+  \item
+    A sequence of abstractions can be abbreviated. For example:
+    \begin{itemize}
+      \item 
+        `$\lambda xyz.\,M$' instead of `$\lambda x.\,\lambda y.\,\lambda
+        z.\,M$'
+    \end{itemize}
+\end{enumerate}
+
+I recommend mastering at least the first two conventions. Whether you use the
+third is up to you\dots
+
+\subsection{``Semantics''} 
+
+Core equivalences:
+\begin{itemize}
+  \item
+    (\textbf{Renaming bound variables}) 
+    $\lambda x.\,M \underset{\alpha}{\longrightarrow} \lambda y.\, M[x \ra y]$
+
+  \item
+    (\textbf{Applying functions to arguments})
+    $(\lambda x.\,M)\,y \underset{\beta}{\longrightarrow} M[x \ra y]$
+
+  \item
+    (\textbf{Extensionality}) $f \underset{\eta}{\longrightarrow} \lambda
+    x.\, f\, x$
+\end{itemize}
+
+Two of these equivalences rely on the notion of \textbf{substitution}, defined
+as follows: 
+\begin{align}
+  \notag
+  M[x \ra y] \text{~is the formula you get by replacing all $M$'s \textbf{free}
+  occurrences of $x$ with $y$.}
+\end{align}
+%
+The \textbf{free} variables in an expression $E$ (`$\con{FV}\,E$') are the
+variables in $E$ not \textbf{bound} by a $\lambda$:
+\begin{align}
+  \notag
+  \begin{array}{r@{}c@{}l}
+    \con{FV}\,x & {}={} & \set{x}
+    \\[.35em] 
+    \con{FV}\,(\lambda x.\,M) & {}={} & \con{FV}\,M - \set{x}
+    \\[.35em]  
+    \con{FV}\,(M\,N) & {}={} & \con{FV}\,M \cup \con{FV}\,N
+  \end{array}
+\end{align}
+%
+In other words, you can read $M[x \ra y]$ as ``$M$, but where the (free) $x$'s
+becomes $y$'s''.
+
+Some examples of substitution in action: 
+\begin{align}
+  \notag
+  x[x \ra y] &= y
+  \\\notag
+  (\lambda x.\,x)[x \ra y] &= \lambda x.\,x
+  \\\notag
+  (\lambda f.\,f\,x)[x \ra y] &= \lambda f.\, f\, y
+\end{align}
+
+Substition has various notations. Sometimes you see `$M[x \ceq y]$'. Sometimes,
+as in our last class, you see `$M[y\mathrel/x]$'. I'm hoping the present choice
+will be the most perspicuous. Let me know.
+
+A couple examples of $\alpha$, $\beta$, and $\eta$ in action (notice that
+$\alpha$-, $\beta$-, and $\eta$- equivalence can apply to proper
+\emph{sub-formulas} of any $\lambda$-expression, as well as maximal
+$\lambda$-expressions):
+\begin{align}
+  \begin{array}{c}
+    \notag
+    \lambda f.\,\lambda x.\, f\,x \underset{\alpha}{\longrightarrow} \lambda
+    f.\,\lambda z.\,f\,z \underset{\alpha}{\longrightarrow} \lambda g.\, \lambda
+    z.\, g\,z
+    \\[1em]
+    (\lambda f.\, \lambda x.\, f\,x)\,(\lambda y.\, y)
+    \underset{\beta}{\longrightarrow} \lambda x.\, (\lambda y.\,y)\,x
+    \underset{\beta}{\longrightarrow} \lambda x.\, x
+    \\[1em] 
+    \lambda f.\, f \underset{\eta}{\longrightarrow} \lambda f.\, \lambda x.\,
+    f\, x \underset{\eta}{\longrightarrow} \lambda f.\, \lambda x.\, \lambda
+    y.\, f\, x\, y
+  \end{array}
+\end{align}
+%
+A $\beta$-reduction is \textbf{invalid} if it places a variable within the scope
+of a co-indexed $\lambda$:
+\begin{align}
+  \notag
+  (\lambda x.\, \lambda y.\, f\,x\,y)\,y
+  \underset{\mathclap{\beta\text{?~}\textbf{NO.}}}{\longrightarrow}
+  \lambda y.\, f\, y\, y
+\end{align}
+%
+To avoid this unfortunate situation, exploit $\alpha$-equivalence:
+\begin{align}
+  \notag
+  (\lambda x.\, \lambda y.\, f\,x\,y)\,y
+  \underset{\alpha}{\longrightarrow}
+  (\lambda x.\, \lambda z.\, f\,x\,z)\,y
+  \underset{\alpha}{\longrightarrow}
+  \lambda z.\, f\, y\, z
+\end{align}
+
+An $\alpha$-equivalence is \textbf{invalid} for an expression $E$ if it binds a
+free variable in $E$:
+\begin{align}
+  \notag
+  \lambda x.\,x\,y
+  \underset{\mathclap{\alpha\text{?~}\textbf{NO.}}}{\longrightarrow}
+  \lambda y.\,y\, y
+\end{align}
+
+To avoid this unfortunate situation\dots\ Don't get into it!
+
+\section{Types}
+
+The variety of the $\lambda$-calculus defined in the last section is
+\textbf{untyped}. Because of this, you can define functions like the following:
+\begin{align}
+  \notag
+  \omega \ceq \lambda x.\, x\, x
+\end{align}
+%
+Which you can use to define the following:
+\begin{align}
+  \notag
+  \Omega \ceq \omega \, \omega
+\end{align}
+%
+As we saw in the last class, $\Omega$ has an interesting property:
+$\beta$-``reducing'' it gives you exactly what you already had!!
+\begin{align}
+  \notag
+  \Omega \underset{\beta}{\longrightarrow} \Omega
+\end{align}
+%
+We'll be working with a different system in this class, called the
+\textbf{simply-typed} $\lambda$-calculus.
+
+What are \textbf{types}? Pretty simple: types are nothing more than \textbf{sets
+of objects}! For example, the type $\mathbb{N}$ is the set of natural numbers. 
+
+In semantics, we work with two basic types: the type of individuals (roughly,
+things that can go in subject or object position%
+\footnote{%
+  NB\@: semanticists think of lots of things as individuals, including numbers,
+  tables and chairs, pets, bacteria, and so on. 
+}), and the type of truth values. By convention, the type of individuals is
+written `$\texttt{e}$' (for `entity', probably), and the type of truth values is
+written `$\texttt{t}$'.
+\begin{align}
+  \notag
+  \texttt{e} & \Coloneqq \set{x : x \text{~is an individual}}
+  \\\notag
+  \texttt{t} & \Coloneqq \set{0, 1}
+\end{align}
+%
+Using our basic types, we can give an inductive definition for the set of
+\textbf{all types} $\tau$, as follows:
+\begin{enumerate}
+  \item
+    $\texttt{e}, \texttt{t} \in \tau$.
+
+  \item
+    If $\alpha, \beta \in \tau$, then $\ab{\alpha, \beta} \in \tau$.
+
+  \item
+    Nothing else is in $\tau$.
+\end{enumerate}
+
+Some examples of types according to this ``grammar'': 
+\begin{itemize}
+  \item
+    \texttt{e}
+    
+  \item
+    \ab{\texttt{e}, \texttt{t}}
+
+  \item 
+    \ab{\ab{\texttt{e}, \texttt{t}}, \texttt{t}}
+
+  \item
+    \ab{\ab{\texttt{e},\texttt{e}}, \ab{\ab{\texttt{e},\texttt{e}},
+    \ab{\texttt{e},\texttt{e}}}}
+\end{itemize}
+
+The simple types are the individuals and the truth values. What are the complex
+types? The types of \textbf{functions}: \ab{\alpha, \beta} is the type of
+functions from things of type $\alpha$ to things of type $\beta$.
+
+An example. Let's begin with the set of linguists. This set has a characteristic
+function, which we might name $\con{linguist}$. This function can be represented
+in $\lambda$-notation as follows (notice that this is just the $\eta$-expansion
+of \con{linguist}!):
+\begin{align}
+  \notag
+  \lambda x.\, \con{linguist}\, x
+\end{align}
+%
+This function
+takes individuals as arguments and returns truth values.  Accordingly, its type
+is \ab{\texttt{e}, \texttt{t}}. 
+
+Likewise, an \ab{\ab{\texttt{e},\texttt{t}},\texttt{t}} function takes functions
+from individuals to truth values as arguments, and returns truth values. A
+trivial example is the following:
+\begin{align}
+  \notag
+  \lambda P.\, 1
+\end{align}
+
+In the simply-typed $\lambda$-calculus, every function is \textbf{partial}. That
+is, every function expects its arguments to be of a certain type, and doesn't
+know what to do otherwise. For example, $\lambda x.\, \con{linguist}\, x$
+wouldn't know what to do if you fed it $\lambda x.\, \con{philosopher}\, x$. The
+result would be \textbf{undefined}.
+
+There are a number of ways to notate restrictions on types. Heim \& Kratzer use
+the following convention (more generally, they use the `:' notation to
+indicate partiality):
+\begin{align}
+  \notag
+  \lambda x : x \in \texttt{e}.\, \con{linguist}\, x
+\end{align}
+%
+Another way to go (the way I prefer, maybe because it saves symbols), is to use
+subscripts:
+\begin{align}
+  \notag
+  \lambda x_{\texttt{e}}.\, \con{linguist}\, x
+\end{align}
+%
+In any case, type notations are often omitted when context makes clear what an
+expression's type is.
+
+Some other examples:
+\begin{itemize}
+  \item
+    $\sv{\text{blue}} = \lambda x_{\texttt{e}}.\, \con{blue}\, x$
+
+  \item
+    $\sv{\text{devoured}} = \lambda x_{\texttt{e}}.\, \lambda y_{\texttt{e}}.\,
+    \con{devoured}\, x\, y$
+
+  \item
+    $\sv{\text{not}} = \lambda p_{\texttt{t}}.\, 1 - p$
+
+  \item
+    $\sv{\text{and}} = \lambda p_{\texttt{t}}.\, \lambda q_{\texttt{t}}.\, p = q
+    = 1$
+\end{itemize}
+
+In order:
+\begin{itemize}
+  \item
+    The type of a simple adjective is a function from individuals to truth
+    values, type \ab{\texttt{e}, \texttt{t}}. 
+
+  \item
+    The type of a transitive verb is a function from individuals to: a function
+    from individuals to truth values, type \ab{\texttt{e}, \ab{\texttt{e},
+    \texttt{t}}}. 
+
+  \item
+    The type of sentential negation is a function from truth values to truth
+    values, type \ab{\texttt{t}, \texttt{t}}.
+    
+  \item
+    The type of sentential conjunction is a function from truth values to: a
+    function from truth values to truth values, type \ab{\texttt{t},
+    \ab{\texttt{t}, \texttt{t}}}.
+\end{itemize}
+
+In this manner of speaking, we can talk about denotations having types, as well
+as syntactic units (i.e., the type associated with a piece of syntax's
+denotation). We can use the following notation to indicate that an expression
+has a certain type:
+\begin{align}
+  \notag
+  \text{devoured} :: \ab{e, \ab{e, t}}
+\end{align}
+
+At the risk of burdening you with another notational convention, I'll mention
+that the way I prefer to write types in my own work (because it's way easier to
+parse than the brackets) is using arrows:%
+\footnote{%
+  In fact, you could \emph{omit} the arrows entirely and still have a perfectly
+  good notation scheme for types. But that's getting a bit telegraphic for most
+  people's tastes.
+}
+\begin{align}
+  \notag
+  \lfloor e \rfloor &= e
+  \\\notag
+  \lfloor e \ra t \rfloor &= e \ra t
+  \\\notag
+  \lfloor\ab{e, \ab{e, t}}\rfloor &= e \ra e \ra t
+  \\\notag
+  \lfloor\ab{\ab{e, t}, t}\rfloor &= (e \ra t) \ra t
+\end{align}
+%
+Notice that in the simply-typed $\lambda$-calculus, it \textbf{makes no sense}
+for a function to apply to itself:
+\begin{itemize}
+  \item
+    Take an arbitrary $f$. Since $f$ is a function, it will have type
+    \ab{\alpha, \beta}, for some types $\alpha$ and $\beta$. 
+
+  \item 
+    But then, for $f\,f$ to be defined, $f$ needs to be able to take itself as
+    an argument. 
+
+  \item 
+    So then the functor $f$'s type must be \ab{\ab{\alpha, \beta}, \beta}. 
+    
+  \item
+    But then the argument $f$'s type must also be \ab{\ab{\alpha, \beta},
+    \beta}.
+    
+  \item
+    In which case $f$'s type must actually be \ab{\ab{\ab{\alpha, \beta},
+    \beta}, \beta}. 
+    
+  \item
+    And so on\dots
+\end{itemize}
+
+This means that $\omega$, which crucially involves self-application, is
+impossible to define in a simply-typed system. Ergo, $\Omega$ is impossible to
+define. 
+
+In fact, every simply-typed $\lambda$-term is guaranteed to \textbf{terminate}
+into a unique \textbf{normal form}, in which no further $\beta$-reductions are
+possible. Because every expression has a \emph{unique} normal form, the order of
+reductions never makes any difference. For example:
+\begin{align}
+  \begin{array}{r@{}c@{}l}
+    (\lambda x.\, f\,x) \, ((\lambda y.\, g\, y)\, z)
+    \underset{\beta}\longrightarrow{}
+    &
+    (\lambda x.\, f\,x) \, (g\,z)
+    &
+    {}\underset{\beta}\longrightarrow f\, (g\, z)
+    \\
+    (\lambda x.\, f\,x) \, ((\lambda y.\, g\, y)\, z)
+    \underset{\beta}\longrightarrow{}
+    &
+    f\,((\lambda y.\, g\, y)\, z)
+    &
+    {}\underset{\beta}\longrightarrow  
+    f\, (g\, z)
+  \end{array}
+\end{align}
+%
+%(Notice that I am using subscripts here both to indicate the type of a
+%$\lambda$-expression's arguments, and also the types of the epxressions in its
+%body.)
+Unlike $\omega$, it is possible to assign types to all the expressions in this
+term in a way that achieves a defined end result. Exercise: come up with one
+such typing scheme. 
+
+\end{document}

@@ -1,0 +1,48 @@
+- date: 2016-11-06
+  author:  Simon Charlow
+  title: Scalar implicature and exceptional scope
+  abstract: |
+    There is lots of work on scalar implicature, lots of work on the
+    exceptional scope properties of indefinites, and comparatively little work
+    on the scalar implicatures of exceptionally scoping indefinites. This note
+    points out that a phenomenon of 'exceptional scalar distributivity'
+    suggests that the scalar alternatives of indefinites are more abstract
+    than we might have figured: they don't correspond to any actually
+    expressible lexemes, and they aren't, strictly speaking, alternatives of
+    the indefinite determiner at all! I develop a rudimentary account,
+    pointing out various issues, predictions, and choice points along the way.
+    I show that two different kinds of theories can be used to explain the
+    data: one uses choice functions for exceptional scope, and another uses
+    alternatives directly.
+  location: Submitted
+  url: http://ling.auf.net/lingbuzz/003181
+
+- date: 2016-11-06
+  author:  Simon Charlow
+  title: Where is the destructive update problem?
+  url: http://semanticsarchive.net/Archive/jJhMWNlZ/
+  abstract: |
+    Though much research assumes or argues that there’s a ‘destructive update’
+    problem for dynamic accounts of anaphora, it isn’t easy to see what this
+    problem is supposed to consist in. There do not, in particular, seem to be
+    any problematic empirical predictions associated with destructive update.
+    In a sense, this is unsurprising: destructive update of assignments is a
+    characteristic feature of how binding is perpetrated in static systems
+    (including first-order logic and the λ-calculus). The difference between
+    static and dynamic systems isn’t that only dynamic systems allow
+    destructive update — it’s that only dynamic systems treat assignment
+    functions as bona fide semantic values, as information.
+  location: Forthcoming in <em>Semantics & Pragmatics</em>
+
+- date: 2014-08-01
+  author: Simon Charlow
+  title: On the semantics of exceptional scope
+  url: http://semanticsarchive.net/Archive/2JmMWRjY/
+  location: "My NYU Ph.D. thesis (Chair: Chris Barker)"
+  abstract: |
+    I motivate a new theory of exceptional scope phenomena in natural
+    language—that is, the ability of some expressions to affect the
+    interpretation of others from inside scope islands. I propose that a scope
+    island is any domain that is obligatorily evaluated and that exceptional
+    scope uniformly reflects linguistic side effects taking scope after the
+    evaluation of a scope island.

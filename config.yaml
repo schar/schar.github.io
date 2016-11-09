@@ -1,0 +1,6 @@
+indexfile: index.yaml
+title: Simon Charlow
+sourcedir: [., templates]
+datadir: [., data]
+filesdir: [files]
+layout: layout.html.st
