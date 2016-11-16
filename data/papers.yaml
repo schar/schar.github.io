@@ -35,6 +35,23 @@
     (pending minor revisions)
   url: http://semanticsarchive.net/Archive/jJhMWNlZ/
 
+- date: 2015-07-08
+  author: Simon Charlow
+  title: Givenness, compositionally and dynamically
+  abstract: |
+    Schwarzschild's Givenness constraint is at odds with compositionality:
+    whether an expression satisfies it can’t, in general, be known on the
+    basis of the expression's meaning and the meanings of its siblings alone.
+    Fortunately, Rooth defines a compositional focus interpretation operator
+    which can be repurposed to do the job. I argue that the anaphoric
+    character of this Givenness operator must be taken seriously: Givenness
+    operators can be bound in all the same ways as pronouns --- that is,
+    there's evidence they participate in both in-scope and donkey-anaphoric
+    binding. I sketch a dynamic theory of Givenness operators that secures
+    these results.
+  location: "<em>Short 'schrift for Alan Prince</em>"
+  url: papers/GCAD.pdf
+
 - date: 2014-08-01
   author: Simon Charlow
   title: On the semantics of exceptional scope
@@ -131,7 +148,7 @@
     embedded in a quantified (subject) DP’s restrictor or nuclear scope.
   location: <em>Proceedings of New Directions in the Theory of Presupposition,
     ESSLLI 2009</em> (11pp)
-  url: http://simoncharlow.com/papers/presupp.pdf
+  url: papers/presupp.pdf
 
 - date: 2008-01-01
   author: Simon Charlow
