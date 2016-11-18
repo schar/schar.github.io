@@ -1,1 +1,1 @@
-$it; format="%B %d, %Y"$
+$it; format="%B %e, %Y"$
