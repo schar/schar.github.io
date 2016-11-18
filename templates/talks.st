@@ -1,3 +1,8 @@
 # Talks
 
-\[Nothing here yet\] 
+---
+
+<dl>
+$talksbydate:talkgroup()$
+</dl>
+

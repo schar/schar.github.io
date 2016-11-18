@@ -12,6 +12,9 @@
 - url       : talks.html
   title     : Talks
   template  : talks.st
+  requires  : [talk.st, talkgroup.st, date.st]
+  data      :
+    talksbydate : FROM talks.yaml ORDER BY date DESC GROUP BY date
 
 - url       : teaching.html
   title     : Teaching
