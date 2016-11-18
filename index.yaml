@@ -10,7 +10,7 @@
     papersbydate : FROM papers.yaml ORDER BY date DESC GROUP BY date
 
 - url       : talks.html
-  title     : Talks
+  title     : Selected talks 
   template  : talks.st
   requires  : [talk.st, talkgroup.st, date.st]
   data      :
