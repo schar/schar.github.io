@@ -1,4 +1,4 @@
-1.  $if(it.url)$[**$it.title$**]($it.url$)$endif$
+1.  $if(it.url)$[$endif$**$it.title$**$if(it.url)$]($it.url$)$endif$
     <span class="abstract-toggle">
     $if(it.abstract)$<span class="polarity">&plusmn;</span>$endif$
     </span>
