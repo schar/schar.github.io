@@ -8,9 +8,9 @@
     ‘trace’ is itself a dynamic GQ. Such functions, though a hop-and-a-skip up
     the type hierarchy from dynamic GQs, are already available to any
     standard-issue Montagovian dynamic semanticist, and dealing with them
-    compositionally requires nothing beyond whatever machinery already under-
-    writes quantifiers in object position, scope ambiguity, and so on. I build
-    on this theory by exploring a type-theoretic elaboration of it
+    compositionally requires nothing beyond whatever machinery already
+    under-writes quantifiers in object position, scope ambiguity, and so on. I
+    build on this theory by exploring a type-theoretic elaboration of it
     (technically, in terms of subtype polymorphism) that rules out arguably
     unattested ‘pseudo-cumulative’ readings. Second, I show that even these
     steps (higher-order dynamic GQs, subtyping) are unnecessary if the usual
