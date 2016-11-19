@@ -8,25 +8,25 @@
   author: Simon Charlow, Dylan Bumford
   title: "Monadic dynamic semantics: Side effects and scope"
   url: handouts/MNLS.pdf
-  location: <a href="http://www.indiana.edu/~iulg/nlcs.html">NLCS \'16</a>
+  location: Refereed talk @ <a href="http://www.indiana.edu/~iulg/nlcs.html">NLCS \'16</a>
 
 - date: 2015-11-20
   author: Simon Charlow
   title: The grammar of exceptional scope
   url: handouts/umd-slides-2015.pdf
-  location: University of Maryland Linguistics Colloquium
+  location: Invited colloquium @ University of Maryland Linguistics
 
 - date: 2015-11-05
   author: Simon Charlow
   title: The grammar of exceptional scope
   url: handouts/cornell-slides-2015.pdf
-  location: Cornell Linguistics Colloquium
+  location: Invited colloquium @ Cornell Linguistics
 
 - date: 2015-10-24
   author: Simon Charlow
   title: Monadic dynamic semantics for anaphora
   url: handouts/monads-slides-cmh.pdf
-  location: <a href="http://www.u.tsukuba.ac.jp/~kubota.yusuke.fn/DynamicSemanticsWS.html">Ohio State Dynamic Semantics Workshop</a>
+  location: Invited talk @ <a href="http://www.u.tsukuba.ac.jp/~kubota.yusuke.fn/DynamicSemanticsWS.html">Ohio State Dynamic Semantics Workshop</a>
 
 - date: 2015-10-13
   author: Simon Charlow
@@ -38,16 +38,17 @@
   author: Simon Charlow
   title: Conventional implicature as a scope phenomenon
   url: handouts/CISP-slides.pdf
-  location: NYU Workshop on Continuations and Scope
+  location: Invited talk @ NYU Workshop on Continuations and Scope
 
 - date: 2015-05-15
   author: Simon Charlow
   title: The scope of alternatives
   url: handouts/SALT25__slides.pdf
-  location: <a href="https://web.stanford.edu/dept/linguistics/events/salt25/">SALT 25 (Stanford)</a>
+  location: |
+    Refereed talk @ <a href="https://web.stanford.edu/dept/linguistics/events/salt25/">SALT 25 (Stanford)</a>
 
 - date: 2015-05-03
   author: Simon Charlow
   title: The scope of alternatives
   url: handouts/uconn-2015.pdf
-  location: <a href="http://logic.uconn.edu/workshop/">Going Heim (UConn)</a>
+  location: Invited talk @ <a href="http://logic.uconn.edu/workshop/">Going Heim (UConn)</a>
