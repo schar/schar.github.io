@@ -49,6 +49,10 @@ footer {
   color:#23527c;
 }
 
+.me {
+  border-bottom: 1px dotted rgba(0,0,0,.15);
+}
+
 ul {
   list-style-type: square
 }

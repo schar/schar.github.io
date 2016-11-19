@@ -3,6 +3,8 @@
     $if(it.abstract)$<span class="polarity">&plusmn;</span>$endif$
     </span>
 
+    $if(it.coauthors)$$it.coauthors$.$endif$
+
     $if(it.date)$&zwnj;$it.date:year()$.$endif$
     $if(it.location)$$it.location$.$endif$
 

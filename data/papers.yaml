@@ -1,5 +1,4 @@
 - date: 2016-10-25
-  author: Simon Charlow
   title: Scalar implicature and exceptional scope
   abstract: |
     There is lots of work on scalar implicature, lots of work on the
@@ -18,7 +17,6 @@
   url: http://ling.auf.net/lingbuzz/003181
 
 - date: 2016-09-04
-  author: Simon Charlow
   title: Where is the destructive update problem?
   abstract: |
     Though much research assumes or argues that there’s a ‘destructive update’
@@ -36,7 +34,6 @@
   url: http://semanticsarchive.net/Archive/jJhMWNlZ/
 
 - date: 2015-07-08
-  author: Simon Charlow
   title: Givenness, compositionally and dynamically
   abstract: |
     Schwarzschild's Givenness constraint is at odds with compositionality:
@@ -53,7 +50,6 @@
   url: papers/GCAD.pdf
 
 - date: 2014-08-01
-  author: Simon Charlow
   title: On the semantics of exceptional scope
   abstract: |
     I motivate a new theory of exceptional scope phenomena in natural
@@ -66,7 +62,7 @@
   url: http://semanticsarchive.net/Archive/2JmMWRjY/
 
 - date: 2014-05-01
-  author: Adamantios I. Gafos, Simon Charlow, Jason A. Shaw, Philip Hoole
+  coauthors: Adamantios I. Gafos, <span class="me">Simon Charlow</span>, Jason A. Shaw, Philip Hoole
   title: |
     Stochastic time analysis of syllable-referential intervals and simplex
     onsets
@@ -94,7 +90,7 @@
   url: http://dx.doi.org/10.1016/j.wocn.2013.11.007
 
 - date: 2014-03-04
-  author: Simon Charlow, Yael Sharvit
+  coauthors: <span class="me">Simon Charlow</span>, Yael Sharvit
   title: Bound ‘de re’ pronouns and the LFs of attitude reports
   abstract: |
     An empirical argument is given in support of Percus & Sauerland’s (2003)
@@ -110,7 +106,6 @@
   url: http://dx.doi.org/10.3765/sp.7.3
 
 - date: 2012-01-01
-  author: Simon Charlow
   title: Cross-categorial donkeys
   abstract: |
     Data from surprising sloppy readings of verb phrase ellipsis constructions
@@ -122,7 +117,6 @@
   url: http://dx.doi.org/10.1007/978-3-642-31482-7_27
 
 - date: 2010-01-01
-  author: Simon Charlow
   title: Can DP be a scope island?
   abstract: |
     Sauerland (2005) uses data from inverse linking to motivate quantifier
@@ -138,7 +132,6 @@
   url: http://dx.doi.org/10.1007/978-3-642-14729-6_1
 
 - date: 2009-01-01
-  author: Simon Charlow
   title: \"Strong\" predicative presuppositional objects
   abstract: |
     I argue for a less subtle picture of presupposition projection out of
@@ -151,7 +144,6 @@
   url: papers/presupp.pdf
 
 - date: 2008-01-01
-  author: Simon Charlow
   title: "Free and bound pro-verbs: a unified treatment of anaphora"
   abstract: |
     This paper argues that certain phenomena related to verb (phase) ellipsis
