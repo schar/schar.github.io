@@ -1,0 +1,51 @@
+For Friday September 5, please read (in decreasing
+order of importance):
+
+=====================================================
+
+1. Heim & Kratzer: Chapter 1 (12pp)
+    > on the foundations of semantics
+
+2. Grice: Logic and Conversation (18pp)
+    > on implicatures
+    
+3. Stalnaker: Pragmatic Presuppositions (12pp)
+    > on presupposition. NB: Stalnaker uses 
+    > "entails" differently from how we do and uses
+    > "necessitates" the way we use "entails".
+    
+**Note that this list differs from the handout**
+
+=====================================================
+
+Readings are uploaded as pdfs in the /pdfs/ directory 
+where they're listed alphabetically by author. I've 
+included the reading for next week, along with a few 
+other textbooks that you might find useful (these are 
+*not* required reading!). 
+
+Here is some more info on the textbooks:
+
+1. Allwood et al: we'll be working through this next
+    week. Good, reasonably leisurely intro to the 
+    formal concepts we'll be relying on. 
+
+2. Carpenter: a useful reference for folks who are
+    interested in categorial grammar and alternative
+    approaches to the syntax-semantics interface.
+
+3. Dowty et al: a book-length exegesis of Montague's
+    PTQ (where it all began).
+    
+4. Gamut: an fine introduction to semantics, geared
+    more towards logicians. Distinctly Dutch.
+
+5. Partee et al: a classic "introductory" text, much
+    heavier on formalism than what we'll be doing. 
+    
+6. Sider: much more on formal logic, geared towards 
+    philosophers. 
+
+The folder named /ZZZZ/ has a bunch of other pdfs.
+Future readings will be drawn from there, but we 
+won't read all or even many of the papers there. 
