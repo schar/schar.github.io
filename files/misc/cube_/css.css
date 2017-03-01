@@ -1,0 +1,70 @@
+body{
+    background-color: fuchsia
+}
+.container{
+/*perspective*/
+-webkit-perspective:250px;
+/*perspective-origin*/
+-webkit-perspective-origin:50% 80%;
+left:25%;
+top:30%;
+position:absolute;
+}
+.cube{
+position:relative;
+width:640px;
+height:640px;
+/*transform-style*/
+-webkit-transform-style:preserve-3d;
+}
+.cube div{
+position:absolute;
+width:640px;
+height:640px;
+}
+.front{
+/*transform*/
+-webkit-transform:translateZ(320px);
+opacity:1;
+}
+.back{
+/*transform*/
+-webkit-transform:translateZ(-320px) rotateY(180deg);
+opacity:1;
+}
+.right{
+/*transform*/
+-webkit-transform:rotateY(90deg) translateX(320px);
+/*transform-origin*/
+-webkit-transform-origin:center right;
+opacity:1;
+}
+.left{
+/*transform*/
+-webkit-transform:rotateY(-90deg) translateX(-320px);
+/*transform-origin*/
+-webkit-transform-origin:center left;
+opacity:1;
+}
+.top{
+/*transform*/
+-webkit-transform:rotateX(-90deg) translateY(-320px);
+/*transform-origin*/
+-webkit-transform-origin:top center;
+opacity:1;
+}
+.bottom{
+/*transform*/
+-webkit-transform:rotateX(90deg) translateY(320px);
+/*transform-origin*/
+-webkit-transform-origin:bottom center;
+opacity:1;
+}
+@-webkit-keyframes spinn{
+from { -webkit-transform: rotateY(0); }
+	to { -webkit-transform: rotateY(360deg); }
+}
+.cube{
+/*animation*/
+-webkit-animation:spinn 5s infinite linear;
+}
