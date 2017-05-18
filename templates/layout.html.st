@@ -11,7 +11,7 @@
         <![endif]-->
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Megrim&amp;subset=latin,greek-ext,latin-ext,greek"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Megrim&subset=latin,greek-ext,latin-ext,greek"
           rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen"
           href="$root$css/screen.css">
