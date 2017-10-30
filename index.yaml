@@ -1,5 +1,5 @@
 - url      : index.html
-  title    : Home
+  title    : About
   template : index.st
 
 - url       : papers.html
@@ -10,29 +10,24 @@
     papersbydate : FROM papers.yaml ORDER BY date DESC GROUP BY date
 
 - url       : talks.html
-  title     : Selected talks 
+  title     : Talks
   template  : talks.st
   requires  : [talk.st, talkgroup.st, date.st]
   data      :
     talksbydate : FROM talks.yaml ORDER BY date DESC GROUP BY date
 
-- url       : teaching.html
-  title     : Teaching
-  template  : teaching.st
-
-- url       : advising.html
-  title     : Advising
-  template  : advising.st
-
 - url       : vita.html
   title     : Vita
   template  : vita.st
 
-- url       : blog.html
-  title     : Blog
-  template  : blog.st
+# - url       : "#"
+#   title     : Teaching
+#   template  : teaching.st
 
-- url      : news.html
-  title    : News
-  template : news.st
+# - url       : "#"
+#   title     : Advising
+#   template  : advising.st
 
+# - url       : "#"
+#   title     : Blog
+#   template  : blog.st

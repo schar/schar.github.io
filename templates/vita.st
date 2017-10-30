@@ -1,5 +1,7 @@
 # Vita
 
-You can download my cv [here][1].
+---
+
+You can download my CV [here][1].
 
 [1]: cv.pdf
