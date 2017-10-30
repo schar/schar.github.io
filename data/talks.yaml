@@ -1,3 +1,39 @@
+- date: 2017-10-25
+  title: Modular alternative semantics
+  url: handouts/umass-2017.pdf
+  location: UMass Amherst Semantics Group
+
+- date: 2017-10-14
+  title: A modular theory of pronouns (and binding)
+  url: handouts/phlip-slides.pdf
+  location: <a href="https://lucian.uchicago.edu/blogs/phlip/program/">Philosophical Linguistics & Linguistical Philosophy</a> (PhLiP, Tarrytown)
+
+- date: 2017-09-05
+  title: Parsing with Dynamic Continuized CCG
+  coauthors: Michael White, <span class="me">Simon Charlow</span>, Jordan Needle & Dylan Bumford
+  url: http://www.ling.ohio-state.edu/~white.1240/talks/dyc3g-tagplus-2017-slides.pdf
+  location: <a href="http://tag13.cs.umu.se/">TAG+13</a> (Umeå)
+
+- date: 2017-09-04
+  title: A modular theory of pronouns (and binding)
+  url: handouts/dbv-2017.pdf
+  location: Invited talk, Philosophy of Language & Linguistics (Dubrovnik)
+
+- date: 2017-07-27
+  title: Exceptional implicature
+  url: handouts/nsconf-slides.pdf
+  location: Invited talk, Nova Scotia Meaning Workshop (Shobac NS)
+
+- date: 2017-06-01
+  title: "The scope of alternatives: Indefinites and islands"
+  url: handouts/ucsd-2.pdf
+  location: Invited talk, UCSD Semantics Babble
+
+- date: 2017-05-30
+  title: Meaning as comutation?
+  url: handouts/ucsd-1.pdf
+  location: Invited lecture, UCSD Graduate Semantics (Ling 230)
+
 - date: 2016-11-04
   title: Alternatives, and alternative semantics
   url: handouts/nyu-alts-2016.pdf
