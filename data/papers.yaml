@@ -1,11 +1,64 @@
+- date: 2017-10-22
+  title: A modular theory of pronouns and binding
+  location: |
+    Submitted to <em>Proceedings of Logic & Engineering of Natural Language
+    Semantics 14</em>
+  abstract: |
+    Since Shan's (2002) pioneering work, a number of researchers have argued
+    that <em>monads</em> offer a flexible, robust compositional interface for
+    expressions that denote in "enriched spaces". This paper argues that a
+    monadic treatment of pronouns and assignment-sensitivity has a number of
+    theoretical and empirical benefits, including (i) a maximally simple
+    lexicon and a fully categorematic treatment of abstraction; (ii)
+    centrally, immediate analyses of paycheck pronouns and binding
+    reconstruction, with a unitary, simple semantics for pronouns and traces.
+    The treatment involves abstracting out the two functions that underlie
+    standard treatments of assignment-friendly composition --- yielding a
+    so-called <em>applicative functor</em> --- and then adding a third
+    function to deal with 'higher-order' variables, yielding a monad. Two
+    developments of the basic idea are briefly explored. First, I argue that a
+    mere applicative functor turns out to be sufficient after all, if we (a)
+    adopt a more type-theoretically conservative treatment of assignments than
+    is standard, and (b) countenance sentence meanings that depend on multiple
+    assignments. Second, I demonstrate an equivalence of the resulting theory
+    with a <em>variable-free semantics</em>, one which extends both to the
+    combinatory apparatus underwriting composition, and to the resulting
+    semantic values.
+  url: http://ling.auf.net/lingbuzz/003720
+
+- date: 2017-09-01
+  title: Parsing with Dynamic Continuized CCG
+  location: |
+    <em>Proceedings of the 13th International Workshop on Tree Adjoining
+    Grammars and Related Formalisms (TAG+13)</em>, Association for
+    Computational Linguistics, 71--83
+  abstract: |
+    We present an implemented method of parsing with Combinatory Categorial
+    Grammar (CCG) that for the first time derives the exceptional scope
+    behavior of indefinites in a principled and plausibly practical way. The
+    account implements Charlow's (2014) monadic approach to dynamic semantics,
+    in which indefinites' exceptional scope taking follows from the way the
+    side effect of introducing a discourse referent survives the process of
+    delimiting the scope of true quantifiers in a continuized grammar. To
+    efficiently parse with this system, we extend Barker and Shan's (2014)
+    method of parsing with continuized grammars to only invoke monadic lifting
+    and lowering where necessary, and define novel normal form constraints
+    on lifting and lowering to avoid spurious ambiguities. We also integrate
+    Steedman's (2000) CCG for deriving basic predicate-argument structure and
+    enrich it with a method of lexicalizing scope island constraints. We argue
+    that the resulting system improves upon Steedman's CCG in terms of
+    theoretical perspicuity and empirical coverage while retaining many of its
+    attractive computational properties.
+  url: http://aclweb.org/anthology/W17-6208
+
 - date: 2017-02-01
   title: "The scope of alternatives: Indefiniteness and islands"
   location: Accepted at <em>Linguistics & Philosophy</em>
   abstract: |
     I argue that expressions that denote sets of alternatives interact with
     their semantic contexts by taking scope. My account relies only on two
-    freely-applying type-shifters: the first is Karttunen’s (1977)
-    proto-question operator, aka Partee’s (1986) IDENT, and the second can be
+    freely-applying type-shifters: the first is Karttunen's (1977)
+    proto-question operator, aka Partee's (1986) IDENT, and the second can be
     factored out of extant approaches to the semantics of questions in the
     tradition of Karttunen (1977). These type-shifters form a decomposition
     of LIFT, the familiar function mapping values into scope-takers.
@@ -33,16 +86,16 @@
     I explore two alternatives to post-suppositions for generating cumulative
     readings of sentences with multiple modified numerals. The first uses
     higher-order dynamic generalized quantifiers (GQs), functions whose
-    ‘trace’ is itself a dynamic GQ. Such functions, though a hop-and-a-skip up
+    ‘trace' is itself a dynamic GQ. Such functions, though a hop-and-a-skip up
     the type hierarchy from dynamic GQs, are already available to any
     standard-issue Montagovian dynamic semanticist, and dealing with them
     compositionally requires nothing beyond whatever machinery already
     under-writes quantifiers in object position, scope ambiguity, and so on. I
     build on this theory by exploring a type-theoretic elaboration of it
     (technically, in terms of subtype polymorphism) that rules out arguably
-    unattested ‘pseudo-cumulative’ readings. Second, I show that even these
+    unattested ‘pseudo-cumulative' readings. Second, I show that even these
     steps (higher-order dynamic GQs, subtyping) are unnecessary if the usual
-    ‘point-wise’ dynamic semantics of Dynamic Predicate Logic or Compositional
+    ‘point-wise' dynamic semantics of Dynamic Predicate Logic or Compositional
     DRT, where propositions are relations on assignments, is replaced with an
     update semantics, where propositions are functions from sets of
     assignments into sets of assignments. Conservative update-semantic
@@ -75,7 +128,7 @@
     in association with focus --- and afflict various other in situ approaches
     to exceptional scope phenomena --- e.g., the singleton subset selection
     functions of von Fintel (1999, 2000). I propose a general solution,
-    inspired by Reinhart’s (1997) "intensional choice functions", which relies
+    inspired by Reinhart's (1997) "intensional choice functions", which relies
     on a relatively extensional treatment of assignment sensitivity and
     variable binding.
   url: \#
@@ -101,15 +154,15 @@
 - date: 2016-09-04
   title: Where is the destructive update problem?
   abstract: |
-    Though much research assumes or argues that there’s a ‘destructive update’
-    problem for dynamic accounts of anaphora, it isn’t easy to see what this
+    Though much research assumes or argues that there's a ‘destructive update'
+    problem for dynamic accounts of anaphora, it isn't easy to see what this
     problem is supposed to consist in. There do not, in particular, seem to be
     any problematic empirical predictions associated with destructive update.
     In a sense, this is unsurprising: destructive update of assignments is a
     characteristic feature of how binding is perpetrated in static systems
     (including first-order logic and the λ-calculus). The difference between
-    static and dynamic systems isn’t that only dynamic systems allow
-    destructive update — it’s that only dynamic systems treat assignment
+    static and dynamic systems isn't that only dynamic systems allow
+    destructive update — it's that only dynamic systems treat assignment
     functions as bona fide semantic values, as information.
   location: Accepted pending minor revisions at <em>Semantics & Pragmatics</em>
   url: http://semanticsarchive.net/Archive/jJhMWNlZ/
@@ -118,7 +171,7 @@
   title: Givenness, compositionally and dynamically
   abstract: |
     Schwarzschild's Givenness constraint is at odds with compositionality:
-    whether an expression satisfies it can’t, in general, be known on the
+    whether an expression satisfies it can't, in general, be known on the
     basis of the expression's meaning and the meanings of its siblings alone.
     Fortunately, Rooth defines a compositional focus interpretation operator
     which can be repurposed to do the job. I argue that the anaphoric
@@ -172,15 +225,15 @@
 
 - date: 2014-03-04
   coauthors: <span class="me">Simon Charlow</span>, Yael Sharvit
-  title: Bound ‘de re’ pronouns and the LFs of attitude reports
+  title: Bound ‘de re' pronouns and the LFs of attitude reports
   abstract: |
-    An empirical argument is given in support of Percus & Sauerland’s (2003)
-    theory of ‘de re’ ascription, according to which the internal argument of
+    An empirical argument is given in support of Percus & Sauerland's (2003)
+    theory of ‘de re' ascription, according to which the internal argument of
     *believe* is a function from concept-generators to propositions. The
     argument concerns pronouns in the scope of attitude verbs that are
-    interpreted both ‘de re’ and as bound variables. It is argued that more
-    traditional theories of ‘de re’ ascription—specifically, theories that
-    take the ‘res’ to be an internal argument of *believe*—fail to account for
+    interpreted both ‘de re' and as bound variables. It is argued that more
+    traditional theories of ‘de re' ascription—specifically, theories that
+    take the ‘res' to be an internal argument of *believe*—fail to account for
     such pronouns, as they predict that a pronoun cannot simultaneously be an
     argument of *believe* and bound by a quantifier in the scope of *believe*.
   location: <em>Semantics & Pragmatics</em> 7(3), 1--43
@@ -191,7 +244,7 @@
   abstract: |
     Data from surprising sloppy readings of verb phrase ellipsis constructions
     argue that ellipsis sites can partially or totally consist of dynamically
-    bound pro-forms. I give an account, integrating Muskens’ CDRT with a
+    bound pro-forms. I give an account, integrating Muskens' CDRT with a
     focus-based theory of ellipsis and deaccenting.
   location: <em>Selected Papers from the 18th Amsterdam Colloquium
     (LNCS 7218)</em>, 261--270
@@ -201,12 +254,12 @@
   title: Can DP be a scope island?
   abstract: |
     Sauerland (2005) uses data from inverse linking to motivate quantifier
-    raising (QR) out of DP, proposing to derive Larson’s generalization
+    raising (QR) out of DP, proposing to derive Larson's generalization
     regarding the scopal integrity of DP via an Economy-based constraint on
-    QR. I first lay out Sauerland’s three arguments for QR out of DP. I
+    QR. I first lay out Sauerland's three arguments for QR out of DP. I
     present (a slightly modified version of) his mechanism for constraining
     QR. I show that it both over- and under- generates. I conclude by arguing
-    that the readings Sauerland uses to motivate his account don’t result from
+    that the readings Sauerland uses to motivate his account don't result from
     an island-respecting QR mechanism.
   location: <em>ESSLLI 2008 & ESSLLI 2009 Student Sessions, Selected Papers
     (LNAI 6211)</em>, 1--12
@@ -219,7 +272,7 @@
     quantified contexts in order to account for the projective behavior of
     “strong” predicative presuppositions. Specifically, strong predicative
     presuppositions seem to give rise to robust universal inferences whether
-    embedded in a quantified (subject) DP’s restrictor or nuclear scope.
+    embedded in a quantified (subject) DP's restrictor or nuclear scope.
   location: <em>Proceedings of New Directions in the Theory of Presupposition,
     ESSLLI 2009</em> (11pp)
   url: papers/presupp.pdf
