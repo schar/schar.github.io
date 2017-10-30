@@ -1,6 +1,6 @@
 - date: 2017-10-22
   title: A modular theory of pronouns and binding
-  location: Submitted to <em>Proceedings of LENLS 14</em>
+  location: Submitted to <em>Proceedings of <a href="www.is.ocha.ac.jp/~bekki/lenls/">LENLS 14</a></em>
   abstract: |
     Since Shan's (2002) pioneering work, a number of researchers have argued
     that <em>monads</em> offer a flexible, robust compositional interface for
@@ -26,12 +26,8 @@
 
 - date: 2017-09-01
   title: Parsing with Dynamic Continuized CCG
-  coauthors: |
-    Michael White, <span class="me">Simon Charlow</span>, Jordan Needle, Dylan
-    Bumford  
-  location: |
-    <em>Proceedings TAG+13</em>, Association for Computational Linguistics,
-    71--83
+  coauthors: Michael White, <span class="me">Simon Charlow</span>, Jordan Needle, Dylan Bumford
+  location: <em>Proceedings of <a href="http://tag13.cs.umu.se/">TAG+13</a></em>, Association for Computational Linguistics, 71--83
   abstract: |
     We present an implemented method of parsing with Combinatory Categorial
     Grammar (CCG) that for the first time derives the exceptional scope
