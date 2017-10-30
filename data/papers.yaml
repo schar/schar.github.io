@@ -13,15 +13,15 @@
     The treatment involves abstracting out the two functions that underlie
     standard treatments of assignment-friendly composition --- yielding a
     so-called <em>applicative functor</em> --- and then adding a third
-    function to deal with 'higher-order' variables, yielding a monad. Two
-    developments of the basic idea are briefly explored. First, I argue that a
-    mere applicative functor turns out to be sufficient after all, if we (a)
-    adopt a more type-theoretically conservative treatment of assignments than
-    is standard, and (b) countenance sentence meanings that depend on multiple
-    assignments. Second, I demonstrate an equivalence of the resulting theory
-    with a <em>variable-free semantics</em>, one which extends both to the
-    combinatory apparatus underwriting composition, and to the resulting
-    semantic values.
+    function to deal with 'higher-order' variables, yielding a
+    monad.<br><br>Two developments of the basic idea are briefly explored.
+    First, I argue that a mere applicative functor turns out to be sufficient
+    after all, if we (a) adopt a more type-theoretically conservative
+    treatment of assignments than is standard, and (b) countenance sentence
+    meanings that depend on multiple assignments. Second, I demonstrate an
+    equivalence of the resulting theory with a <em>variable-free
+    semantics</em>, one which extends both to the combinatory apparatus
+    underwriting composition, and to the resulting semantic values.
   url: http://ling.auf.net/lingbuzz/003720
 
 - date: 2017-09-01
