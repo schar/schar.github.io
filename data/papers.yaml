@@ -26,6 +26,9 @@
 
 - date: 2017-09-01
   title: Parsing with Dynamic Continuized CCG
+  coauthors: |
+    Michael White, <span class="me">Simon Charlow</span>, Jordan Needle, Dylan
+    Bumford  
   location: |
     <em>Proceedings TAG+13</em>, Association for Computational Linguistics,
     71--83
