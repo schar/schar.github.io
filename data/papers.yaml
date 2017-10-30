@@ -1,8 +1,6 @@
 - date: 2017-10-22
   title: A modular theory of pronouns and binding
-  location: |
-    Submitted to <em>Proceedings of Logic & Engineering of Natural Language
-    Semantics 14</em>
+  location: Submitted to <em>Proceedings of LENLS 14</em>
   abstract: |
     Since Shan's (2002) pioneering work, a number of researchers have argued
     that <em>monads</em> offer a flexible, robust compositional interface for
@@ -29,9 +27,8 @@
 - date: 2017-09-01
   title: Parsing with Dynamic Continuized CCG
   location: |
-    <em>Proceedings of the 13th International Workshop on Tree Adjoining
-    Grammars and Related Formalisms (TAG+13)</em>, Association for
-    Computational Linguistics, 71--83
+    <em>Proceedings TAG+13</em>, Association for Computational Linguistics,
+    71--83
   abstract: |
     We present an implemented method of parsing with Combinatory Categorial
     Grammar (CCG) that for the first time derives the exceptional scope
