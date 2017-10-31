@@ -17,6 +17,9 @@ how syntactic form constrains interpretation (and, occasionally, doesn't).
 I've been both foe and friend to pseudo-scope mechanisms. And I've got a soft
 spot for direct interpretation.
 
+<a href="img/me.jpg">Here</a> is a recent photo of me near the top of <a
+href="https://en.wikipedia.org/wiki/Mount_Lemmon">Mount Lemmon</a>.
+
 There should be a bit more here sometime soon. 🦉🦉🦉</div>
 
 [1]: http://ling.rutgers.edu
