@@ -43,7 +43,7 @@
         <h1>$sitetitle$</h1>
       </header>-->
       <div class="row">
-        <main role="main" class="col-md-9">
+        <main class="col-md-9">
           $contents$
         </main>
       </div>
