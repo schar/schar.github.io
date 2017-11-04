@@ -26,8 +26,6 @@ blockquote { font-size: inherit; display: none; }
 
 .me { border-bottom: 1px dotted rgba(0,0,0,.15); }
 
-ul { list-style-type: square }
-
 ol li { padding: 4px }
 
 li > p { margin: 4px }
