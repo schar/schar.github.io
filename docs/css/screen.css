@@ -3,7 +3,7 @@
 body { padding-top: 60px;       /* make room for top-fixed navbar */
        font-size: 12pt;
        font-family: Helvetica Neue, Helvetica, Arial, sans serif;
-       line-height: 1.3em; }
+       line-height: .75em; }
 
 h1 { font-family: inherit; font-size: 25pt; }
 
@@ -15,14 +15,14 @@ footer { position:fixed;
          width:100%;
          color:#888;
          text-align:left;
-         font-size:75%;
+         font-size:8pt!important;
          background:rgba(255,255,255,.9); }
 
 .para { line-height: 1.6em }
 
 hr { height:3px; border:none; color:#eee; background-color:#eee; }
 
-blockquote { font-size: 11pt!important; display:none; }
+blockquote { font-size: 11pt!important; display:none; line-height:1.3em }
 
 .abstract-toggle { float:right; cursor:pointer; }
 
