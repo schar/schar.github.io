@@ -2,12 +2,12 @@
 
 ---
 
-<div class="para">I'm an Assistant Professor in the [Rutgers Department of
-Linguistics][1], and a member of the [Rutgers Center for Cognitive
-Science][2]. I'm a linguist and a formal semanticist, which means that I study
-the mathematical structures that allow people to produce and understand
-language. I started doing formal semantics at Brown University with [Polly
-Jacobson][3], and I got my PhD at NYU working with [Chris Barker][4].
+I'm an Assistant Professor in the [Rutgers Department of Linguistics][1], and
+a member of the [Rutgers Center for Cognitive Science][2]. I'm a linguist and
+a formal semanticist, which means that I study the mathematical structures
+that allow people to produce and understand language. I started doing formal
+semantics at Brown University with [Polly Jacobson][3], and I got my PhD at
+NYU working with [Chris Barker][4].
 
 My research looks at scope and binding, questions and indefiniteness, focus,
 dynamic semantics, continuations and monads, ellipsis, and their interactions.
@@ -21,7 +21,7 @@ interpretation][6].
 
 [Here][7] is a recent photo of me near the top of [Mount Lemmon][8].
 
-There should be a bit more here sometime soon. 🦉🦉🦉</div>
+There should be a bit more here sometime soon. 🦉🦉🦉
 
 [1]: http://ling.rutgers.edu
 [2]: http://ruccs.rutgers.edu
