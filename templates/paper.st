@@ -1,7 +1,7 @@
 1.  $if(it.url)$[$endif$**$it.title$**$if(it.url)$]($it.url$)$endif$
-    <span class="abstract-toggle">
+    <a class="abstract-toggle">
     $if(it.abstract)$<span class="polarity">&plusmn;</span>$endif$
-    </span>
+    </a>
 
     $if(it.coauthors)$$it.coauthors$.$endif$
 

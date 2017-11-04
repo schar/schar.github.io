@@ -10,27 +10,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Megrim&subset=latin,greek-ext,latin-ext,greek"
-          rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="$root$css/screen.css">
-    <link rel="stylesheet" type="text/css" media="print"
-          href="$root$css/print.css">
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
             type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="$root$js/nav.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="$root$css/screen.css" />
     <link rel="stylesheet" type="text/css" media="print" href="$root$css/print.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <header>
-        <h1>$sitetitle$</h1>
-      </header>
-      <div class="row">
-        <nav id="navbar" class="navbar nav navbar-default col-md-2">
+    <div class="container">
+      <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="index.html">$sitetitle$</a>
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle"
                     data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,49 +38,20 @@
           <div class="navbar-collapse collapse">
             $nav$
           </div>
-        </nav>
-        <main role="main" class="col-md-10">
+        </div>
+      </nav>
+      <!--<header>
+        <h1>$sitetitle$</h1>
+      </header>-->
+      <div class="row">
+        <main role="main" class="col-md-9">
           $contents$
         </main>
       </div>
-      <footer>
+      <footer class="text-muted small">
         powered by <a href="https://github.com/jgm/yst">yst</a>
       </footer>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-36810337-1', 'auto'); ga('send', 'pageview'); </script>
+    <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-36810337-1', 'auto'); ga('send', 'pageview'); </script>
   </body>
 </html>

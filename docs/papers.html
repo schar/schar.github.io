@@ -10,27 +10,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Megrim&subset=latin,greek-ext,latin-ext,greek"
-          rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="css/screen.css">
-    <link rel="stylesheet" type="text/css" media="print"
-          href="css/print.css">
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
             type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="js/nav.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
     <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <header>
-        <h1>Simon Charlow</h1>
-      </header>
-      <div class="row">
-        <nav id="navbar" class="navbar nav navbar-default col-md-2">
+    <div class="container">
+      <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="index.html">Simon Charlow</a>
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle"
                     data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,13 +38,18 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav"><li><a href="index.html">About</a></li><li class="active"><a href="papers.html">Papers</a></li><li><a href="talks.html">Talks</a></li><li><a href="vita.html">Vita</a></li></ul>
           </div>
-        </nav>
-        <main role="main" class="col-md-10">
+        </div>
+      </nav>
+      <!--<header>
+        <h1>Simon Charlow</h1>
+      </header>-->
+      <div class="row">
+        <main role="main" class="col-md-9">
           <h1 id="papers">Papers</h1>
 <hr />
 <dl>
 <ol type="1">
-<li><p><a href="http://ling.auf.net/lingbuzz/003720"><strong>A modular theory of pronouns and binding</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://ling.auf.net/lingbuzz/003720"><strong>A modular theory of pronouns and binding</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2017. Submitted to <em>Proceedings of <a href="http://www.is.ocha.ac.jp/~bekki/lenls/">LENLS 14</a></em>.</p>
 <blockquote class="abstract">
 <p>
@@ -59,75 +59,75 @@ Since Shan’s (2002) pioneering work, a number of researchers have argued that 
 Two developments of the basic idea are briefly explored. First, I argue that a mere applicative functor turns out to be sufficient after all, if we (a) adopt a more type-theoretically conservative treatment of assignments than is standard, and (b) countenance sentence meanings that depend on multiple assignments. Second, I demonstrate an equivalence of the resulting theory with a <em>variable-free semantics</em>, one which extends both to the combinatory apparatus underwriting composition, and to the resulting semantic values.
 </p>
 </blockquote></li>
-<li><p><a href="http://aclweb.org/anthology/W17-6208"><strong>Parsing with Dynamic Continuized CCG</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://aclweb.org/anthology/W17-6208"><strong>Parsing with Dynamic Continuized CCG</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>Michael White, <span class="me">Simon Charlow</span>, Jordan Needle, Dylan Bumford.</p>
 <p>‌2017. <em>Proceedings of <a href="http://tag13.cs.umu.se/">TAG+13</a></em>, Association for Computational Linguistics, 71–83.</p>
 <blockquote class="abstract">
 We present an implemented method of parsing with Combinatory Categorial Grammar (CCG) that for the first time derives the exceptional scope behavior of indefinites in a principled and plausibly practical way. The account implements Charlow’s (2014) monadic approach to dynamic semantics, in which indefinites’ exceptional scope taking follows from the way the side effect of introducing a discourse referent survives the process of delimiting the scope of true quantifiers in a continuized grammar. To efficiently parse with this system, we extend Barker and Shan’s (2014) method of parsing with continuized grammars to only invoke monadic lifting and lowering where necessary, and define novel normal form constraints on lifting and lowering to avoid spurious ambiguities. We also integrate Steedman’s (2000) CCG for deriving basic predicate-argument structure and enrich it with a method of lexicalizing scope island constraints. We argue that the resulting system improves upon Steedman’s CCG in terms of theoretical perspicuity and empirical coverage while retaining many of its attractive computational properties.
 </blockquote></li>
-<li><p><a href="http://ling.auf.net/lingbuzz/003302"><strong>The scope of alternatives: Indefiniteness and islands</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://ling.auf.net/lingbuzz/003302"><strong>The scope of alternatives: Indefiniteness and islands</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2017. Accepted at <em>Linguistics &amp; Philosophy</em>.</p>
 <blockquote class="abstract">
 I argue that expressions that denote sets of alternatives interact with their semantic contexts by taking scope. My account relies only on two freely-applying type-shifters: the first is Karttunen’s (1977) proto-question operator, aka Partee’s (1986) IDENT, and the second can be factored out of extant approaches to the semantics of questions in the tradition of Karttunen (1977). These type-shifters form a decomposition of LIFT, the familiar function mapping values into scope-takers. Exceptional scope of alternative-generating expressions arises via (snowballing) scopal pied-piping. With an empirical focus on English indefinites, I argue that this approach to alternatives improves on standard alternative-semantic architectures that use point-wise composition to subvert islands (and, more generally, on in situ approaches to indefinites). Specifically, unlike grammars based on point-wise composition, scope-based alternative management is thoroughly categorematic, does not under-generate readings when multiple indefinites occur on an island, and is readily compatible with standard treatments of binding. I explore two generalizations of the basic theory: one is oriented around assignment-relative sets of alternatives, and the other incorporates a dynamic perspective on assignment functions. The upshot is that dynamic semantics can be seen as a strict extension of alternative semantics, with the initial results (including island insensitivity for alternative generators) preserved.
 </blockquote></li>
-<li><p><a href="http://ling.auf.net/lingbuzz/003243"><strong>Post-suppositions and semantic theory</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://ling.auf.net/lingbuzz/003243"><strong>Post-suppositions and semantic theory</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2016. Accepted pending minor revisions at <em>Journal of Semantics</em>.</p>
 <blockquote class="abstract">
 I explore two alternatives to post-suppositions for generating cumulative readings of sentences with multiple modified numerals. The first uses higher-order dynamic generalized quantifiers (GQs), functions whose ‘trace’ is itself a dynamic GQ. Such functions, though a hop-and-a-skip up the type hierarchy from dynamic GQs, are already available to any standard-issue Montagovian dynamic semanticist, and dealing with them compositionally requires nothing beyond whatever machinery already under-writes quantifiers in object position, scope ambiguity, and so on. I build on this theory by exploring a type-theoretic elaboration of it (technically, in terms of subtype polymorphism) that rules out arguably unattested ‘pseudo-cumulative’ readings. Second, I show that even these steps (higher-order dynamic GQs, subtyping) are unnecessary if the usual ‘point-wise’ dynamic semantics of Dynamic Predicate Logic or Compositional DRT, where propositions are relations on assignments, is replaced with an update semantics, where propositions are functions from sets of assignments into sets of assignments. Conservative update-semantic meanings for modified numerals — direct update-theoretic analogs of their point-wise counterparts — automatically yield cumulative readings and fail to derive pseudo-cumulative readings. This gives an argument for an update semantics in the anaphoric domain, so far as I know the first of its kind. I compare these two analyses with each other and consider their relation to post-suppositions in semantic theory more generally, concluding: (i) the theories canvassed here have conceptual and empirical advantages over post-suppositions; (ii) the update-theoretic account offers the most direct route to an empirically adequate analysis of modified numerals; (iii) the reasons for this turn out to be specific to modified numerals; other post-suppositional analyses are better reformulated with higher-order GQs.
 </blockquote></li>
-<li><p><a href="http://ling.auf.net/lingbuzz/003181"><strong>Scalar implicature and exceptional scope</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://ling.auf.net/lingbuzz/003181"><strong>Scalar implicature and exceptional scope</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2016. Under revision for <em>Linguistic Inquiry</em>.</p>
 <blockquote class="abstract">
 There is lots of work on scalar implicature, lots of work on the exceptional scope properties of indefinites, and comparatively little work on the scalar implicatures of exceptionally scoping indefinites. This note points out that a phenomenon of ‘exceptional scalar distributivity’ suggests that the scalar alternatives of indefinites are more abstract than we might have figured: they don’t correspond to any actually expressible lexemes, and they aren’t, strictly speaking, alternatives of the indefinite determiner at all! I develop a rudimentary account, pointing out various issues, predictions, and choice points along the way. I show that two different kinds of theories can be used to explain the data: one uses choice functions for exceptional scope, and another uses alternatives directly.
 </blockquote></li>
-<li><p><a href="http://semanticsarchive.net/Archive/jJhMWNlZ/"><strong>Where is the destructive update problem?</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://semanticsarchive.net/Archive/jJhMWNlZ/"><strong>Where is the destructive update problem?</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2016. Accepted pending minor revisions at <em>Semantics &amp; Pragmatics</em>.</p>
 <blockquote class="abstract">
 Though much research assumes or argues that there’s a ‘destructive update’ problem for dynamic accounts of anaphora, it isn’t easy to see what this problem is supposed to consist in. There do not, in particular, seem to be any problematic empirical predictions associated with destructive update. In a sense, this is unsurprising: destructive update of assignments is a characteristic feature of how binding is perpetrated in static systems (including first-order logic and the λ-calculus). The difference between static and dynamic systems isn’t that only dynamic systems allow destructive update — it’s that only dynamic systems treat assignment functions as bona fide semantic values, as information.
 </blockquote></li>
-<li><p><a href="#"><strong>Debugging choice functions</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="#"><strong>Debugging choice functions</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2016. Manuscript coming soon.</p>
 <blockquote class="abstract">
 Choice functions are commonly used to give accounts of exceptionally scoping indefinites. However, choice functions also allow restricted indefinites to acquire a kind of “scope” over any operators that bind pronouns in their restrictors. As Schwarz (2001) points out, this leads to systematic over-generation when the operators in question are not upward monotone. I point out that versions of this problem arise for a wide variety of constructions — including when the operator in question is upward monotone, in various kinds of nested indefinite structures, and in association with focus — and afflict various other in situ approaches to exceptional scope phenomena — e.g., the singleton subset selection functions of von Fintel (1999, 2000). I propose a general solution, inspired by Reinhart’s (1997) “intensional choice functions”, which relies on a relatively extensional treatment of assignment sensitivity and variable binding.
 </blockquote></li>
-<li><p><a href="papers/GCAD.pdf"><strong>Givenness, compositionally and dynamically</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="papers/GCAD.pdf"><strong>Givenness, compositionally and dynamically</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2015. <em>Short ’schrift for Alan Prince</em>.</p>
 <blockquote class="abstract">
 Schwarzschild’s Givenness constraint is at odds with compositionality: whether an expression satisfies it can’t, in general, be known on the basis of the expression’s meaning and the meanings of its siblings alone. Fortunately, Rooth defines a compositional focus interpretation operator which can be repurposed to do the job. I argue that the anaphoric character of this Givenness operator must be taken seriously: Givenness operators can be bound in all the same ways as pronouns — that is, there’s evidence they participate in both in-scope and donkey-anaphoric binding. I sketch a dynamic theory of Givenness operators that secures these results.
 </blockquote></li>
-<li><p><a href="http://semanticsarchive.net/Archive/2JmMWRjY/"><strong>On the semantics of exceptional scope</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://semanticsarchive.net/Archive/2JmMWRjY/"><strong>On the semantics of exceptional scope</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2014. My NYU PhD thesis (chaired by <a href="http://www.nyu.edu/projects/barker/">Chris Barker</a>).</p>
 <blockquote class="abstract">
 I motivate a new theory of exceptional scope phenomena in natural language—that is, the ability of some expressions to affect the interpretation of others from inside scope islands. I propose that a scope island is any domain that is obligatorily evaluated and that exceptional scope uniformly reflects linguistic side effects taking scope after the evaluation of a scope island.
 </blockquote></li>
-<li><p><a href="http://dx.doi.org/10.1016/j.wocn.2013.11.007"><strong>Stochastic time analysis of syllable-referential intervals and simplex onsets </strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://dx.doi.org/10.1016/j.wocn.2013.11.007"><strong>Stochastic time analysis of syllable-referential intervals and simplex onsets </strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>Adamantios I. Gafos, <span class="me">Simon Charlow</span>, Jason A. Shaw, Philip Hoole.</p>
 <p>‌2014. <em>Journal of Phonetics</em> 44, 152–166.</p>
 <blockquote class="abstract">
 We pursue an analysis of the relation between qualitative syllable parses and their quantitative phonetic consequences. To do this, we express the statistics of a symbolic organization corresponding to a syllable parse in terms of continuous phonetic parameters which quantify the timing of the consonants and vowels that make up syllables: consonantal plateau durations, vowel durations, and their variances. These parameters can be estimated from continuous phonetic data. This enables analysis of the link between symbolic phonological form and the continuous phonetics in which this form is manifest. Pursuing such an analysis, we illustrate the predictions of the syllabic organization corresponding to simplex onsets and derive a number of previously experimentally observed and simulation results. Specifically, we derive not only the canonical phonetic manifestations of simplex onsets but also the result that, under certain conditions we make precise, the phonetic indices of the simplex onset organization change to a range of values characteristic of the complex onset organization. Finally, we explore the behavior of phonetic indices for syllabic organization over progressively increasing sizes of lexical samples, thereby concomitantly diversifying the phonetic context over which these indices are taken.
 </blockquote></li>
-<li><p><a href="http://dx.doi.org/10.3765/sp.7.3"><strong>Bound ‘de re’ pronouns and the LFs of attitude reports</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://dx.doi.org/10.3765/sp.7.3"><strong>Bound ‘de re’ pronouns and the LFs of attitude reports</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p><span class="me">Simon Charlow</span>, Yael Sharvit.</p>
 <p>‌2014. <em>Semantics &amp; Pragmatics</em> 7(3), 1–43.</p>
 <blockquote class="abstract">
 An empirical argument is given in support of Percus &amp; Sauerland’s (2003) theory of ‘de re’ ascription, according to which the internal argument of <em>believe</em> is a function from concept-generators to propositions. The argument concerns pronouns in the scope of attitude verbs that are interpreted both ‘de re’ and as bound variables. It is argued that more traditional theories of ‘de re’ ascription—specifically, theories that take the ‘res’ to be an internal argument of <em>believe</em>—fail to account for such pronouns, as they predict that a pronoun cannot simultaneously be an argument of <em>believe</em> and bound by a quantifier in the scope of <em>believe</em>.
 </blockquote></li>
-<li><p><a href="http://dx.doi.org/10.1007/978-3-642-31482-7_27"><strong>Cross-categorial donkeys</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://dx.doi.org/10.1007/978-3-642-31482-7_27"><strong>Cross-categorial donkeys</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2012. <em>Selected Papers from the 18th Amsterdam Colloquium (LNCS 7218)</em>, 261–270.</p>
 <blockquote class="abstract">
 Data from surprising sloppy readings of verb phrase ellipsis constructions argue that ellipsis sites can partially or totally consist of dynamically bound pro-forms. I give an account, integrating Muskens’ CDRT with a focus-based theory of ellipsis and deaccenting.
 </blockquote></li>
-<li><p><a href="http://dx.doi.org/10.1007/978-3-642-14729-6_1"><strong>Can DP be a scope island?</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://dx.doi.org/10.1007/978-3-642-14729-6_1"><strong>Can DP be a scope island?</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2010. <em>ESSLLI 2008 &amp; ESSLLI 2009 Student Sessions, Selected Papers (LNAI 6211)</em>, 1–12.</p>
 <blockquote class="abstract">
 Sauerland (2005) uses data from inverse linking to motivate quantifier raising (QR) out of DP, proposing to derive Larson’s generalization regarding the scopal integrity of DP via an Economy-based constraint on QR. I first lay out Sauerland’s three arguments for QR out of DP. I present (a slightly modified version of) his mechanism for constraining QR. I show that it both over- and under- generates. I conclude by arguing that the readings Sauerland uses to motivate his account don’t result from an island-respecting QR mechanism.
 </blockquote></li>
-<li><p><a href="papers/presupp.pdf"><strong>&quot;Strong&quot; predicative presuppositional objects</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="papers/presupp.pdf"><strong>&quot;Strong&quot; predicative presuppositional objects</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2009. <em>Proceedings of New Directions in the Theory of Presupposition, ESSLLI 2009</em> (11pp).</p>
 <blockquote class="abstract">
 I argue for a less subtle picture of presupposition projection out of quantified contexts in order to account for the projective behavior of “strong” predicative presuppositions. Specifically, strong predicative presuppositions seem to give rise to robust universal inferences whether embedded in a quantified (subject) DP’s restrictor or nuclear scope.
 </blockquote></li>
-<li><p><a href="http://dx.doi.org/10.3765/salt.v0i0.2487"><strong>Free and bound pro-verbs: a unified treatment of anaphora</strong></a> <span class="abstract-toggle"> <span class="polarity">±</span> </span></p>
+<li><p><a href="http://dx.doi.org/10.3765/salt.v0i0.2487"><strong>Free and bound pro-verbs: a unified treatment of anaphora</strong></a> <a class="abstract-toggle"> <span class="polarity">±</span> </a></p>
 <p>‌2008. <em>Proceedings of Semantics and Linguistic Theory 18</em>, 194–211.</p>
 <blockquote class="abstract">
 This paper argues that certain phenomena related to verb (phase) ellipsis in English suggest a degree of interpretive flexibility for ellipsis sites close to that exhibited by pronominals. Specifically, it is claimed that (a) like pronouns, ellipsis sites may be bound or free, and (b) one set of grammatical mechanisms affords analyses of both free and bound pronominals and free and bound pro-verbs.
@@ -136,44 +136,10 @@ This paper argues that certain phenomena related to verb (phase) ellipsis in Eng
 </dl>
         </main>
       </div>
-      <footer>
+      <footer class="text-muted small">
         powered by <a href="https://github.com/jgm/yst">yst</a>
       </footer>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-36810337-1', 'auto'); ga('send', 'pageview'); </script>
+    <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-36810337-1', 'auto'); ga('send', 'pageview'); </script>
   </body>
 </html>
