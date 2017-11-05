@@ -22,7 +22,7 @@ interpretation][6].
 [Here][7] is a recent photo of me near the top of [Mount Lemmon][8].
 
 This site is built using John MacFarlane's wonderful [yst][9]. There should be
-a bit more here sometime soon. 🦉🦉🦉
+a bit more here sometime soon. 🦉
 
 [1]: http://ling.rutgers.edu
 [2]: http://ruccs.rutgers.edu
