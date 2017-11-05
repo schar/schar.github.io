@@ -4,10 +4,10 @@
 
 I'm an Assistant Professor in the [Rutgers Department of Linguistics][1], and
 a member of the [Rutgers Center for Cognitive Science][2]. I'm a linguist and
-a formal semanticist, which means that I study the mathematical structures
-that allow people to produce and understand language. I started doing formal
-semantics at Brown University with [Polly Jacobson][3], and I got my PhD at
-NYU working with [Chris Barker][4].
+a formal semanticist, which means I use math to study the structures that
+allow people to produce and understand language. I started doing semantics at
+Brown University with [Polly Jacobson][3], and I got my PhD at NYU working
+with [Chris Barker][4].
 
 My research looks at scope and binding, questions and indefiniteness, focus,
 dynamic semantics, continuations and monads, ellipsis, and their interactions.
