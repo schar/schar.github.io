@@ -21,7 +21,8 @@ interpretation][6].
 
 [Here][7] is a recent photo of me near the top of [Mount Lemmon][8].
 
-There should be a bit more here sometime soon. 🦉🦉🦉
+This site is built using John MacFarlane's wonderful [yst][9]. There should be
+a bit more here sometime soon. 🦉🦉🦉
 
 [1]: http://ling.rutgers.edu
 [2]: http://ruccs.rutgers.edu
@@ -31,3 +32,4 @@ There should be a bit more here sometime soon. 🦉🦉🦉
 [6]: https://global.oup.com/academic/product/direct-compositionality-9780199204380
 [7]: img/me.jpg
 [8]: https://en.wikipedia.org/wiki/Mount_Lemmon
+[9]: https://github.com/jgm/yst
