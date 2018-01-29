@@ -19,6 +19,10 @@
     <script src="$root$js/nav.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="$root$css/screen.css" />
     <link rel="stylesheet" type="text/css" media="print" href="$root$css/print.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <style type="text/css">
+      body { font-family:"Inconsolata",monospace }
+    </style>
   </head>
   <body>
     <div class="container">
