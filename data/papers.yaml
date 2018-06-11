@@ -160,8 +160,8 @@
     static and dynamic systems isn't that only dynamic systems allow
     destructive update — it's that only dynamic systems treat assignment
     functions as bona fide semantic values, as information.
-  location: Accepted pending minor revisions at <em>Semantics & Pragmatics</em>
-  url: http://semanticsarchive.net/Archive/jJhMWNlZ/
+  location: Accepted with revisions at <em>Semantics & Pragmatics</em>
+  url: https://simoncharlow.com/papers/DESTRUCT.pdf/
 
 - date: 2015-07-08
   title: Givenness, compositionally and dynamically
